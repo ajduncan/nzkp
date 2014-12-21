@@ -1,0 +1,4 @@
+/client/nzkp
+/server/nzkpd
+*.o
+.vagrant
