@@ -5,15 +5,25 @@ proof identity protocol.
 
 Original code is located here:  http://perso.crans.org/~raffo/projects.php.
 
-# Building #
+## Building ##
 
-```
-apt-get install libgmp3-dev
-apt-get install happycoders-libsocket-dev
+    Make sure you have dependencies: libgmp, m4, and libsocket.
 
-cd server
-make
+    $ make
 
-cd client
-make
-```
+## Install ##
+
+    $ sudo make install
+
+Which will install the nzkp client to: /opt/nzkp/bin/nzkp
+and the nzkp server to: /opt/nzkp/bin/nzkpd
+
+    To uninstall:
+
+    $ sudo make uninstall
+
+## Vagrant ##
+
+Automated runs can be performed by simply running:
+
+    $ vagrant up
